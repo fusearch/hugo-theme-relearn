@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pir" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="Documentation for Hugo Relearn Theme">
+    <meta name="author" content="Sören Weber">
+    <title>Include :: Cap&#39;n Hugo Relearrrn Theme</title>
+    <link href="https://fusearch.github.io/hugo-theme-relearn/shortcodes/include/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://fusearch.github.io/hugo-theme-relearn/shortcodes/include/index.html" rel="alternate" hreflang="en">
+    <link href="https://fusearch.github.io/hugo-theme-relearn/pir/shortcodes/include/index.html" rel="alternate" hreflang="pir">
+    <link href="https://fusearch.github.io/hugo-theme-relearn/pir/shortcodes/include/index.html" rel="canonical" type="text/html" title="Include :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="../../../pir/shortcodes/include/index.xml" rel="alternate" type="application/rss+xml" title="Include :: Cap&#39;n Hugo Relearrrn Theme">
+    <link href="../../../images/logo.svg?1693537733" rel="icon" type="image/svg+xml">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../css/fontawesome-all.min.css?1693537735" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1693537735" rel="stylesheet"></noscript>
+    <link href="../../../css/nucleus.css?1693537735" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1693537735" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1693537735" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1693537735" rel="stylesheet">
+    <link href="../../../css/fonts.css?1693537735" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1693537735" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1693537735" rel="stylesheet">
+    <link href="../../../css/theme-auto.css?1693537735" rel="stylesheet" id="variant-style">
+    <link href="../../../css/variant.css?1693537735" rel="stylesheet">
+    <link href="../../../css/print.css?1693537735" rel="stylesheet" media="print">
+    <link href="../../../css/format-print.css?1693537735" rel="stylesheet">
+    <link href="../../../css/ie.css?1693537735" rel="stylesheet">
+    <script src="../../../js/url.js?1693537735"></script>
+    <script src="../../../js/variant.js?1693537735"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../pir/index.search.js";
+      var root_url="../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy t\u0027 clipboard';
+      window.T_Copied_to_clipboard = 'Copied t\u0027 clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link t\u0027 clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link t\u0027 clipboard!';
+      window.T_No_results_found = 'No rrresults found fer \u0022{0}\u0022';
+      window.T_N_results_found = '{1} rrresults found fer \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/fusearch.github.io\/hugo-theme-relearn/';
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+    </script>
+    <style>
+      #body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../pir/shortcodes/include/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../pir/index.html"><span itemprop="name">Cap&#39;n Hugo Relearrrn Theme</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../pir/shortcodes/index.html"><span itemprop="name">Shorrrtcodes</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Include</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="include">Include</h1>
+
+
+<p>Th' <code>include</code> shortcode includes other files from yer project inside o' th' current plank.</p>
+<h2 id="usage">Usage</h2>
+<p>While th' examples be us'n shorrrtcodes wit' named parameter ye be free t' use positional aswell or also call this shortcode from yer own partials.</p>
+
+<div class="tab-panel" data-tab-group="shortcode-parameter">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="shortcode"
+      class="tab-nav-button tab-panel-style cstyle initial active"
+      onclick="switchTab('shortcode-parameter','shortcode')"
+    >
+      <div>
+        <div class="tab-nav-hidden">shortcode</div>
+        <div class="tab-nav-text">shortcode</div>
+      </div>
+    </button>
+    <button
+      data-tab-item="shortcode (positional)"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('shortcode-parameter','shortcode (positional)')"
+    >
+      <div>
+        <div class="tab-nav-hidden">shortcode (positional)</div>
+        <div class="tab-nav-text">shortcode (positional)</div>
+      </div>
+    </button>
+    <button
+      data-tab-item="partial"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('shortcode-parameter','partial')"
+    >
+      <div>
+        <div class="tab-nav-hidden">partial</div>
+        <div class="tab-nav-text">partial</div>
+      </div>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="shortcode"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">include</span> <span class="nx">file</span><span class="p">=</span><span class="s">&#34;shortcodes/INCLUDE_ME.md&#34;</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="shortcode (positional)"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">include</span> <span class="s">&#34;shortcodes/INCLUDE_ME.md&#34;</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="partial"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;shortcodes/include .html&#34;</span> <span class="p">(</span><span class="nx">dict</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;page&#34;</span> <span class="p">.</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;file&#34;</span> <span class="s">&#34;shortcodes/INCLUDE_ME.md&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)}}</span></span></span></code></pre></div></div>
+    </div>
+  </div>
+</div>
+<p>Th' included files can even contain Marrrkdown an' will be taken into account when generat'n th' t'ble o' contents.</p>
+<h3 id="parameter">Parameter</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Posit'n</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>file</strong></td>
+<td>1</td>
+<td><em>&lt;empty&gt;</em></td>
+<td>Th' path t' th' file t' be included. Path resolut'n adheres t' <a href="https://gohugo.io/functions/readfile/" target="_blank">Hugo&rsquo;s build-in <code>readFile</code> funct'n</a></td>
+</tr>
+<tr>
+<td><strong>hidefirsthead'n</strong></td>
+<td>2</td>
+<td><code>false</code></td>
+<td>When <code>true</code> an' th' included file contains head'ns, th' first head'n will be hidden. This comes 'n handy, eg. if ye include otherwise standalone Marrrkdown files.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<h3 id="arbitrary-content">Arbitrary Rrrambl'n</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">%</span> <span class="nx">include</span> <span class="s">&#34;shortcodes/INCLUDE_ME.md&#34;</span> <span class="o">%</span><span class="p">}}</span></span></span></code></pre></div><p>Ye can add standard markdown rules:</p>
+<ul>
+<li>multiple paragraphs</li>
+<li>bullet point lists</li>
+<li><em>emphasized</em>, <strong>bold</strong> an' even <strong><em>bold emphasized</em></strong> text</li>
+<li><a href="https://example.com" target="_blank">links</a></li>
+<li>etc.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+</ul>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">...and even source code</span></span></code></pre></div><blockquote>
+<p>th' possibilities be endless (almost - includ'n other shorrrtcodes may or may not work) (almost - includ'n other shorrrtcodes may or may not work)</p>
+</blockquote>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Et Cetera (English: /ɛtˈsɛtərə/), abbreviated t' etc., etc, et cet., be a Latin expression that be used 'n English t' mean &ldquo;and other similar things&rdquo;, or &ldquo;and so forth&rdquo;&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../js/clipboard.min.js?1693537735" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1693537735" defer></script>
+    <script src="../../../js/theme.js?1693537735" defer></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="Documentation for Hugo Relearn Theme">
+    <meta name="author" content="Sören Weber">
+    <title>Customization :: Hugo Relearn Theme</title>
+    <link href="https://fusearch.github.io/hugo-theme-relearn/basics/customization/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://fusearch.github.io/hugo-theme-relearn/basics/customization/index.html" rel="alternate" hreflang="en">
+    <link href="https://fusearch.github.io/hugo-theme-relearn/pir/basics/customization/index.html" rel="alternate" hreflang="pir">
+    <link href="https://fusearch.github.io/hugo-theme-relearn/basics/customization/index.html" rel="canonical" type="text/html" title="Customization :: Hugo Relearn Theme">
+    <link href="../../basics/customization/index.xml" rel="alternate" type="application/rss+xml" title="Customization :: Hugo Relearn Theme">
+    <link href="../../images/logo.svg?1693537732" rel="icon" type="image/svg+xml">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../css/fontawesome-all.min.css?1693537733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1693537733" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1693537733" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1693537733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1693537733" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1693537733" rel="stylesheet">
+    <link href="../../css/fonts.css?1693537733" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1693537733" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1693537733" rel="stylesheet">
+    <link href="../../css/theme-auto.css?1693537733" rel="stylesheet" id="variant-style">
+    <link href="../../css/variant.css?1693537733" rel="stylesheet">
+    <link href="../../css/print.css?1693537733" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1693537733" rel="stylesheet">
+    <link href="../../css/ie.css?1693537733" rel="stylesheet">
+    <script src="../../js/url.js?1693537733"></script>
+    <script src="../../js/variant.js?1693537733"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../index.search.js";
+      var root_url="../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/fusearch.github.io\/hugo-theme-relearn/';
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+    </script>
+    <style>
+      #body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../basics/customization/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../index.html"><span itemprop="name">Hugo Relearn Theme</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../basics/index.html"><span itemprop="name">Basics</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Customization</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="customization">Customization</h1>
+
+<p>The Relearn theme has been built to be as configurable as possible by defining multiple <a href="https://gohugo.io/templates/partials/" target="_blank">partials</a></p>
+<p>In <code>themes/hugo-theme-relearn/layouts/partials/</code>, you will find all the partials defined for this theme. If you need to overwrite something, don&rsquo;t change the code directly. Instead <a href="https://gohugo.io/themes/customizing/" target="_blank">follow this page</a>. You&rsquo;d create a new partial in the <code>layouts/partials</code> folder of your local project. This partial will have the priority.</p>
+<p>This theme defines the following partials :</p>
+<ul>
+<li><code>header.html</code>: the header of the page. See <a href="#output-formats">output-formats</a></li>
+<li><code>footer.html</code>: the footer of the page. See <a href="#output-formats">output-formats</a></li>
+<li><code>body.html</code>: the body of the page. The body may contain of one or many articles. See <a href="#output-formats">output-formats</a></li>
+<li><code>article.html</code>: the output for a single article, can contain elements around your content. See <a href="#output-formats">output-formats</a></li>
+<li><code>menu.html</code>: left menu. <em>Not meant to be overwritten</em></li>
+<li><code>search.html</code>: search box. <em>Not meant to be overwritten</em></li>
+<li><code>custom-header.html</code>: custom headers in page. Meant to be overwritten when adding CSS imports. Don&rsquo;t forget to include <code>style</code> HTML tag directive in your file.</li>
+<li><code>custom-footer.html</code>:  custom footer in page. Meant to be overwritten when adding JavaScript. Don&rsquo;t forget to include <code>javascript</code> HTML tag directive in your file.</li>
+<li><code>favicon.html</code>: the favicon</li>
+<li><code>heading-pre.html</code>: side-wide configuration to prepend to pages title headings. If you override this, it is your responsibility to take the page&rsquo;s <code>headingPre</code> setting into account.</li>
+<li><code>heading-post.html</code>: side-wide configuration to append to pages title headings. If you override this, it is your responsibility to take the page&rsquo;s <code>headingPost</code> setting into account.</li>
+<li><code>logo.html</code>: the logo, on top left hand corner</li>
+<li><code>meta.html</code>: HTML meta tags, if you want to change default behavior</li>
+<li><code>menu-pre.html</code>: side-wide configuration to prepend to menu items. If you override this, it is your responsibility to take the page&rsquo;s <code>menuPre</code> setting into account.</li>
+<li><code>menu-post.html</code>: side-wide configuration to append to menu items. If you override this, it is your responsibility to take the page&rsquo;s <code>menuPost</code> setting into account.</li>
+<li><code>menu-footer.html</code>: footer of the the left menu</li>
+<li><code>toc.html</code>: table of contents</li>
+<li><code>content.html</code>: the content page itself. This can be overridden if you want to display page&rsquo;s meta data above or below the content.</li>
+<li><code>content-header.html</code>: header above the title, has a default implementation but you can overwrite it if you don&rsquo;t like it.</li>
+<li><code>content-footer.html</code>: footer below the content, has a default implementation but you can overwrite it if you don&rsquo;t like it.</li>
+</ul>
+<h2 id="change-the-logo">Change the logo</h2>
+<p>Create a new file in <code>layouts/partials/</code> named <code>logo.html</code>. Then write any HTML you want.
+You could use an <code>img</code> HTML tag and reference an image created under the <em>static</em> folder, or you could paste a SVG definition!</p>
+
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-circle"></i> Note</div>
+  <div class="box-content">
+
+<p>The size of the logo will adapt automatically</p>
+</div>
+</div>
+<h2 id="change-the-favicon">Change the favicon</h2>
+<p>If your favicon is a SVG, PNG or ICO, just drop off your image in your local <code>static/images/</code> folder and name it <code>favicon.svg</code>, <code>favicon.png</code> or <code>favicon.ico</code> respectively.</p>
+<p>Additionally, if you want your site to use light &amp; dark theme favicons that follow the OS&rsquo; (and in some cases, the browser&rsquo;s) color scheme, add the image files to your local <code>static/images/</code> folder and name them eg. <code>favicon-light.svg</code> and/or <code>favicon-dark.svg</code> respectively corresponding to your file format. In case one of the files is missing, the theme falls back to eg. <code>favicon.svg</code> for the missing file. All supplied favicons must be of the same file format.</p>
+
+<div class="box notices cstyle warning">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-triangle"></i> Warning</div>
+  <div class="box-content">
+
+<p>IE and old browser versions do not support <a href="https://caniuse.com/css-media-interaction" target="_blank">media queries</a>, which are necessary for the light &amp; dark theme favicon option.
+If you have requirements to support IE and/or older browser versions, use one of the other options.</p>
+</div>
+</div>
+<p>If no favicon file is found, the theme will lookup the alternative filename <code>logo</code> in the same location and will repeat the search for the list of supported file types.</p>
+<p>If you need to change this default behavior, create a new file in <code>layouts/partials/</code> named <code>favicon.html</code>. Then write something like this:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;icon&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/images/favicon.bmp&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;image/bmp&#34;</span><span class="p">&gt;</span></span></span></code></pre></div><h2 id="theme-variant">Change the colors</h2>
+<p>The Relearn theme lets you choose between some predefined color variants in light or dark mode, but feel free to add one yourself!</p>
+<p>You can preview the shipped variants by changing them in the variant selector at the bottom of the menu.</p>
+<h3 id="single-variant">Single variant</h3>
+<p>Set the <code>themeVariant</code> value with the name of your theme file. That&rsquo;s it!</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">themeVariant</span> <span class="p">=</span> <span class="s2">&#34;relearn-light&#34;</span></span></span></code></pre></div><p>In the above example your theme file has to be named <code>theme-relearn-light.css</code></p>
+<h3 id="multiple-variants">Multiple variants</h3>
+<p>You can also set multiple variants. In this case, the first variant is the default chosen on first view and a variant switch will be shown in the menu footer.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># Change default color scheme with a variant one.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">themeVariant</span> <span class="p">=</span> <span class="p">[</span> <span class="s2">&#34;relearn-light&#34;</span><span class="p">,</span> <span class="s2">&#34;relearn-dark&#34;</span> <span class="p">]</span></span></span></code></pre></div>
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fa-fw fas fa-lightbulb"></i> Tip</div>
+  <div class="box-content">
+
+<p>If you want to switch the syntax highlighting theme together with your color variant, generate a syntax highlighting stylesheet and configure your installation <a href="https://gohugo.io/content-management/syntax-highlighting/" target="_blank">according to Hugo&rsquo;s documentation</a>, and <code>@import</code> this stylesheet in your color variant stylesheet. For an example, take a look into <code>theme-relearn-light.css</code> and <code>config.toml</code> of the exampleSite.</p>
+</div>
+</div>
+<h3 id="adjust-to-os-settings">Adjust to OS Settings</h3>
+<p>You can also cause the site to adjust to your OS settings for light/dark mode. Just set the <code>themeVariant</code> to <code>auto</code>. That&rsquo;s it.</p>
+<p>If you&rsquo;ve set multiple variants, you can drop <code>auto</code> at any position, but usually it makes sense to set it in the first position and make it the default.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">themeVariant</span> <span class="p">=</span> <span class="p">[</span> <span class="s2">&#34;auto&#34;</span><span class="p">,</span> <span class="s2">&#34;red&#34;</span> <span class="p">]</span></span></span></code></pre></div><p>If you don&rsquo;t configure anything else, the theme will use <code>relearn-light</code> for light mode and <code>relearn-dark</code> for dark mode.</p>
+<p>If you don&rsquo;t like that, you can set <code>themeVariantAuto</code>. The first element is the variant for light mode, the second for dark mode</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">themeVariantAuto</span> <span class="p">=</span> <span class="p">[</span> <span class="s2">&#34;learn&#34;</span><span class="p">,</span> <span class="s2">&#34;neon&#34;</span> <span class="p">]</span></span></span></code></pre></div>
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-circle"></i> Note</div>
+  <div class="box-content">
+
+<p>This is not supported for Internet Explorer 11, which still displays in the <code>relearn-light</code> variant.</p>
+</div>
+</div>
+<h3 id="javascript">JavaScript</h3>
+<p>Once a variant is fully loaded, either initially or by switching the variant manually with the variant selector, the custom event <code>themeVariantLoaded</code> on the <code>document</code> will be dispatched. You can add an event listener and react to changes.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span> <span class="s1">&#39;themeVariantLoaded&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">e</span> <span class="p">){</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">e</span><span class="p">.</span><span class="nx">detail</span><span class="p">.</span><span class="nx">variant</span> <span class="p">);</span> <span class="c1">// `relearn-light`
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span></span></span></code></pre></div><h3 id="roll-your-own">Roll your own</h3>
+<p>If you are not happy with the shipped variants you can either copy and rename one of the shipped files from <code>themes/hugo-theme-relearn/static/css</code> to <code>static/css</code>, edit them afterwards to your liking in a text editor and configure the <code>themeVariant</code> parameter in your <code>config.toml</code> or just use the <a href="../../basics/generator/">interactive variant generator</a>.</p>
+<h3 id="output-formats">Output formats</h3>
+<p>Certain parts of the theme can be changed for support of your own <a href="https://gohugo.io/templates/output-formats/" target="_blank">output formats</a>. Eg. if you define a new output format <code>PLAINTEXT</code> in your <code>config.toml</code>, you can add a file <code>layouts/partials/header.plaintext.html</code> to change the way, the page header should look like for that output format.</p>
+
+            <footer class="footline">
+              <i class='fas fa-list'></i>
+              <a class="tag-link" href="../../categories/custom/index.html">custom</a>
+               | <a class="tag-link" href="../../categories/theming/index.html">theming</a>
+
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1693537733" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1693537733" defer></script>
+    <script src="../../js/theme.js?1693537733" defer></script>
+  </body>
+</html>
